@@ -1,0 +1,142 @@
+# Predict the Output
+
+## Problem 1
+
+```javascript
+const cars = ["Tesla", "Mercedes", "Honda"];
+
+const [randomCar] = cars;
+const [, otherRandomCar] = cars;
+```
+
+`randomCar` takes the first value.
+
+`otherRandomCar` skips the first value and takes the second value.
+
+### Output
+
+```text
+Tesla
+Mercedes
+```
+
+---
+
+## Problem 2
+
+```javascript
+const employee = {
+    name: "Elon",
+    age: 47,
+    company: "Tesla"
+};
+
+const { name: otherName } = employee;
+```
+
+The property `name` is stored inside the new variable `otherName`.
+
+A variable called `name` is not created.
+
+### Output
+
+```text
+ReferenceError: name is not defined
+```
+
+The program stops at `console.log(name)`, so `console.log(otherName)` does not run.
+
+If it were printed separately, `otherName` would be:
+
+```text
+Elon
+```
+
+---
+
+## Problem 3
+
+```javascript
+const person = {
+    name: "Phil Smith",
+    age: 47,
+    height: "6 feet"
+};
+
+const password = "12345";
+const { password: hashedPassword } = person;
+```
+
+The variable `password` already contains `"12345"`.
+
+The `person` object does not contain a property called `password`, so `hashedPassword` becomes `undefined`.
+
+### Output
+
+```text
+12345
+undefined
+```
+
+---
+
+## Problem 4
+
+```javascript
+const numbers = [8, 2, 3, 5, 6, 1, 67, 12, 2];
+
+const [, first] = numbers;
+const [, , , second] = numbers;
+const [, , , , , , , , third] = numbers;
+```
+
+The values are:
+
+```text
+first = 2
+second = 5
+third = 2
+```
+
+### Output
+
+```text
+false
+true
+```
+
+`first == second` is false because `2` is not equal to `5`.
+
+`first == third` is true because both values are `2`.
+
+---
+
+## Problem 5
+
+```javascript
+const lastTest = {
+    key: "value",
+    secondKey: [1, 5, 1, 8, 3, 3]
+};
+
+const { key } = lastTest;
+const { secondKey } = lastTest;
+const [, willThisWork] = secondKey;
+```
+
+The value of `key` is `"value"`.
+
+The value of `secondKey` is the complete array.
+
+`secondKey[0]` is the first value, which is `1`.
+
+`willThisWork` skips the first value and takes the second value, which is `5`.
+
+### Output
+
+```text
+value
+[1, 5, 1, 8, 3, 3]
+1
+5
+```
