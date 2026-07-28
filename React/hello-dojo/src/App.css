@@ -1,0 +1,22 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 40px;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+ul {
+  padding-left: 25px;
+}
+
+li {
+  margin: 10px 0;
+  font-size: 18px;
+}
