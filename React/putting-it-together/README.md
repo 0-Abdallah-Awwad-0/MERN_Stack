@@ -1,16 +1,34 @@
-# React + Vite
+# Putting It Together
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React assignment that displays information about people using reusable components and props.
 
-Currently, two official plugins are available:
+Each person has a birthday button that increases their age by one.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+- Displays first name and last name
+- Displays age
+- Displays hair color
+- Uses props to pass person information
+- Uses the `useState` Hook to manage age
+- Increases the age when the button is clicked
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Technologies Used
 
-## Expanding the ESLint configuration
+- React
+- JavaScript
+- JSX
+- CSS
+- Vite
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Main Concepts
+
+### Props
+
+Props are used to pass data from `App.jsx` to the `PersonCard` component.
+
+Example:
+
+```jsx
+<PersonCard firstName="Jane" lastName="Doe" age={45} hairColor="Black" />
+```
