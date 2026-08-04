@@ -1,0 +1,22 @@
+Postman + Pokemon Assignment
+============================
+
+All requests use the GET method.
+
+1. Bulbasaur
+GET https://pokeapi.co/api/v2/pokemon/bulbasaur
+
+2. Charmander
+GET https://pokeapi.co/api/v2/pokemon/charmander
+
+3. Squirtle
+GET https://pokeapi.co/api/v2/pokemon/squirtle
+
+4. Pikachu
+GET https://pokeapi.co/api/v2/pokemon/pikachu
+
+5. Eevee
+GET https://pokeapi.co/api/v2/pokemon/eevee
+
+These requests return information such as each Pokemon's name, ID,
+height, weight, types, abilities, moves, sprites, and base stats.

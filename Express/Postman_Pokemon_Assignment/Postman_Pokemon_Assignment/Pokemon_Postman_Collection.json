@@ -1,0 +1,125 @@
+{
+  "info": {
+    "_postman_id": "7d5ca483-8b48-44b3-a967-3f68607cf4cd",
+    "name": "Postman + Pokemon Assignment",
+    "description": "Five GET requests using PokeAPI.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Get Bulbasaur",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://pokeapi.co/api/v2/pokemon/bulbasaur",
+          "protocol": "https",
+          "host": [
+            "pokeapi",
+            "co"
+          ],
+          "path": [
+            "api",
+            "v2",
+            "pokemon",
+            "bulbasaur"
+          ]
+        },
+        "description": "Retrieve information about Bulbasaur."
+      },
+      "response": []
+    },
+    {
+      "name": "Get Charmander",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://pokeapi.co/api/v2/pokemon/charmander",
+          "protocol": "https",
+          "host": [
+            "pokeapi",
+            "co"
+          ],
+          "path": [
+            "api",
+            "v2",
+            "pokemon",
+            "charmander"
+          ]
+        },
+        "description": "Retrieve information about Charmander."
+      },
+      "response": []
+    },
+    {
+      "name": "Get Squirtle",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://pokeapi.co/api/v2/pokemon/squirtle",
+          "protocol": "https",
+          "host": [
+            "pokeapi",
+            "co"
+          ],
+          "path": [
+            "api",
+            "v2",
+            "pokemon",
+            "squirtle"
+          ]
+        },
+        "description": "Retrieve information about Squirtle."
+      },
+      "response": []
+    },
+    {
+      "name": "Get Pikachu",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://pokeapi.co/api/v2/pokemon/pikachu",
+          "protocol": "https",
+          "host": [
+            "pokeapi",
+            "co"
+          ],
+          "path": [
+            "api",
+            "v2",
+            "pokemon",
+            "pikachu"
+          ]
+        },
+        "description": "Retrieve information about Pikachu."
+      },
+      "response": []
+    },
+    {
+      "name": "Get Eevee",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://pokeapi.co/api/v2/pokemon/eevee",
+          "protocol": "https",
+          "host": [
+            "pokeapi",
+            "co"
+          ],
+          "path": [
+            "api",
+            "v2",
+            "pokemon",
+            "eevee"
+          ]
+        },
+        "description": "Retrieve information about Eevee."
+      },
+      "response": []
+    }
+  ]
+}
