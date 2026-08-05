@@ -1,0 +1,171 @@
+{
+  "info": {
+    "_postman_id": "3a4e6d53-b389-4f12-99cf-1e4bcf0afc2a",
+    "name": "Jokes API",
+    "description": "CRUD and random-joke requests for the Mongoose Jokes assignment.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:8000"
+    },
+    {
+      "key": "jokeId",
+      "value": "PASTE_JOKE_ID_HERE"
+    }
+  ],
+  "item": [
+    {
+      "name": "Get All Jokes",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/jokes",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "jokes"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Get Random Joke",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/jokes/random",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "jokes",
+            "random"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Get One Joke",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/jokes/{{jokeId}}",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "jokes",
+            "{{jokeId}}"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Create Joke",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/api/jokes",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "jokes"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"setup\": \"Why did the developer go broke?\",\n  \"punchline\": \"Because they used up all their cache.\"\n}"
+        }
+      }
+    },
+    {
+      "name": "Update Joke (PATCH)",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/api/jokes/{{jokeId}}",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "jokes",
+            "{{jokeId}}"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"punchline\": \"Because they cleared all their cache.\"\n}"
+        }
+      }
+    },
+    {
+      "name": "Update Joke (PUT)",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/api/jokes/{{jokeId}}",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "jokes",
+            "{{jokeId}}"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"setup\": \"Why did the database administrator leave?\",\n  \"punchline\": \"They could not handle the relationships.\"\n}"
+        }
+      }
+    },
+    {
+      "name": "Delete Joke",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/jokes/{{jokeId}}",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "jokes",
+            "{{jokeId}}"
+          ]
+        }
+      }
+    }
+  ]
+}
