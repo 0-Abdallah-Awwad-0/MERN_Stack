@@ -1,0 +1,18 @@
+Postman + Pokemon
+
+GET Requests:
+
+1. Pikachu
+GET https://pokeapi.co/api/v2/pokemon/pikachu
+
+2. Charizard
+GET https://pokeapi.co/api/v2/pokemon/charizard
+
+3. Squirtle
+GET https://pokeapi.co/api/v2/pokemon/squirtle
+
+4. Eevee
+GET https://pokeapi.co/api/v2/pokemon/eevee
+
+5. Gengar
+GET https://pokeapi.co/api/v2/pokemon/gengar
