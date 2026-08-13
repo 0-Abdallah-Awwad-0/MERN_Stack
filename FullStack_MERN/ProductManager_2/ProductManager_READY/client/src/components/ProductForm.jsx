@@ -24,7 +24,7 @@ export default function ProductForm({ apiUrl, onProductCreated }) {
       setErrors(err.response?.data?.errors || {});
       if (!err.response?.data?.errors) console.error(err);
     }
-  };
+  };  
 
   return (
     <form onSubmit={submitHandler} className="product-form">

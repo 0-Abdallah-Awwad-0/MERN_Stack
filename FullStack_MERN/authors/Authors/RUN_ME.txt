@@ -1,0 +1,9 @@
+Authors
+
+1. Double-click START_PROJECT.cmd
+2. Leave both terminal windows open
+3. The browser should open automatically at http://localhost:5173
+
+The first run installs the packages automatically.
+Backend runs on http://localhost:8000
+Frontend runs on http://localhost:5173
