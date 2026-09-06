@@ -1,0 +1,19 @@
+FAST RENAME CHECKLIST
+
+1. Read the exam entity name.
+2. Rename Appointment to the new entity.
+3. Rename appointment to the new entity.
+4. Rename appointments to the plural entity.
+5. Change model fields and validations.
+6. Change controller model import and function names.
+7. Change /api/appointments routes.
+8. Change React route URLs.
+9. Change form fields.
+10. Change table columns.
+11. Change details fields.
+12. Test create.
+13. Test list.
+14. Test details.
+15. Test edit.
+16. Test delete.
+17. Test any special checkbox/status/schedule requirement.
